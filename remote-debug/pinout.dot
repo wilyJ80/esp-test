@@ -1,0 +1,16 @@
+graph {
+	subgraph cluster_esp {
+		label = esp32;
+		d16;
+		gnd;
+	}
+
+	subgraph cluster_buzzer {
+		label = buzzer;
+		plus;
+		minus;
+	}
+
+	d16 -- plus;
+	minus -- gnd;
+}

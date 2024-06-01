@@ -65,6 +65,9 @@ void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
     digitalWrite(LED_BUILTIN, LOW);
 
+    // Added by Victor: Buzzer pin
+    pinMode(16, OUTPUT);
+
     // Initialize WiFi
     Serial.println("**** Setup: initializing ...");
     WiFi.begin(ssid, password);
@@ -122,9 +125,11 @@ void loop() {
         // Time
         mLastTime = millis();
         mTimeSeconds++;
+        // digitalWrite(16, LOW);
 
         // Blink the led
         digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+        // digitalWrite(16, HIGH);
 
         // Debug the time (verbose level)
         debugV("* Time: %u seconds (VERBOSE)", mTimeSeconds);
