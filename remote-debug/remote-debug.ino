@@ -149,7 +149,18 @@ void loop() {
 
     // RemoteDebug handle
     Debug.handle();
+    Debug.setCallBackProjectCmds(&processCmdRemoteDebug);
 
     // Give a time for ESP
     yield();
+}
+
+void processCmdRemoteDebug() {
+    String lastCmd = Debug.getLastCommand();
+
+    if (lastCmd == "smth") {
+        digitalWrite(16, HIGH);
+        delay(500);
+        digitalWrite(16, LOW);
+    }
 }
