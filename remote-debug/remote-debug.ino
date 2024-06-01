@@ -194,45 +194,63 @@ void processCmdRemoteDebug() {
         noTone(16);
     }*/
 
-    if (lastCmd == "c") {
+    if (lastCmd == "0") {
         tone(16, 523, 100);
         delay(500);
         noTone(16);
     }
 
-    if (lastCmd == "d") {
+    if (lastCmd == "1") {
         tone(16, 587, 100);
         delay(500);
         noTone(16);
     }
 
-    if (lastCmd == "e") {
+    if (lastCmd == "2") {
         tone(16, 659, 100);
         delay(500);
         noTone(16);
     }
 
-    if (lastCmd == "f") {
+    if (lastCmd == "3") {
         tone(16, 698, 100);
         delay(500);
         noTone(16);
     }
 
-    if (lastCmd == "g") {
+    if (lastCmd == "4") {
         tone(16, 784, 100);
         delay(500);
         noTone(16);
     }
 
-    if (lastCmd == "a") {
+    if (lastCmd == "5") {
         tone(16, 880, 100);
         delay(500);
         noTone(16);
     }
 
-    if (lastCmd == "b") {
+    if (lastCmd == "6") {
         tone(16, 988, 100);
         delay(500);
         noTone(16);
     } 
+
+    if (lastCmd == "7") {
+        tone(16, 1047, 100);
+        delay(500);
+        noTone(16);
+    }
+
+    if (lastCmd == "8") {
+        tone(16, 1175, 100);
+        delay(500);
+        noTone(16);
+    } 
+
+    if (lastCmd == "9") {
+        tone(16, 1319, 100);
+        delay(500);
+        noTone(16);
+    }
 } 
