@@ -158,9 +158,81 @@ void loop() {
 void processCmdRemoteDebug() {
     String lastCmd = Debug.getLastCommand();
 
-    if (lastCmd == "smth") {
-        digitalWrite(16, HIGH);
+    /* if (lastCmd == "c2") {
+        tone(16, 65, 100);
         delay(500);
-        digitalWrite(16, LOW);
+        noTone(16);
     }
-}
+    if (lastCmd == "c3") {
+        tone(16, 131, 100);
+        delay(500);
+        noTone(16);
+    }
+    if (lastCmd == "c4") {
+        tone(16, 262, 100);
+        delay(500);
+        noTone(16);
+    }
+    if (lastCmd == "c5") {
+        tone(16, 523, 100);
+        delay(500);
+        noTone(16);
+    }
+    if (lastCmd == "c6") {
+        tone(16, 1047, 100);
+        delay(500);
+        noTone(16);
+    }
+    if (lastCmd == "c7") {
+        tone(16, 2093, 100);
+        delay(500);
+        noTone(16);
+    }
+    if (lastCmd == "c8") {
+        tone(16, 4186, 100);
+        delay(500);
+        noTone(16);
+    }*/
+
+    if (lastCmd == "c") {
+        tone(16, 523, 100);
+        delay(500);
+        noTone(16);
+    }
+
+    if (lastCmd == "d") {
+        tone(16, 587, 100);
+        delay(500);
+        noTone(16);
+    }
+
+    if (lastCmd == "e") {
+        tone(16, 659, 100);
+        delay(500);
+        noTone(16);
+    }
+
+    if (lastCmd == "f") {
+        tone(16, 698, 100);
+        delay(500);
+        noTone(16);
+    }
+
+    if (lastCmd == "g") {
+        tone(16, 784, 100);
+        delay(500);
+        noTone(16);
+    }
+
+    if (lastCmd == "a") {
+        tone(16, 880, 100);
+        delay(500);
+        noTone(16);
+    }
+
+    if (lastCmd == "b") {
+        tone(16, 988, 100);
+        delay(500);
+        noTone(16);
+    } 
+} 
