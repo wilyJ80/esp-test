@@ -6,8 +6,8 @@
  
 using namespace httpsserver;
  
-const char* ssid = "yourNetworkName";
-const char* password =  "yourNetworkPassword";
+const char* ssid = "ARTURMARIANO";
+const char* password =  "genesisapocalipse";
  
 SSLCert * cert;
 HTTPSServer * secureServer;
